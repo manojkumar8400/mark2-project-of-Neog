@@ -23,6 +23,10 @@ function play(question,answer){
     }
 };
 
+var highScore={
+  'Bipin':5,
+}
+
 // Array of Objects
 
 var questi = [{
@@ -37,7 +41,11 @@ var questi = [{
 }, {
   question: "Is Dhoni still the part of team India. \n1. No \n2. I don't know \n3. Yes \n4.I don't know who is Dhoni \n ",
   answer: "1"
-}];
+},{
+  question: "On which post was Dhoni in Indian cricket? \n1. Wicket Keeper \n2. Bowler  \n3. Bastman  \n4.I don't know \n",
+  answer: '1'
+}
+];
 
 // Use Loop for call function
 
@@ -49,3 +57,5 @@ for (var i=0;i<questi.length;i++){
 // For Print Output
 
 console.log(userName,"Your final Score is ",score)
+
+console.log("High Score -:",highScore["Bipin"])
